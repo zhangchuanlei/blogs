@@ -33,7 +33,7 @@ public class JsonUtil {
     }
 
     public static String readJson(String resourceLocation) throws IOException {
-        return IOUtils.toString(ResourceUtils.getURL(resourceLocation), DEFAULT_ENCODING);
+        return IOUtils.toString(ResourceUtils.getURL(resourceLocation), String.valueOf(DEFAULT_ENCODING));
     }
 
 

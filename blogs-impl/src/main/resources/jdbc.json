@@ -1,6 +1,6 @@
 {
   "default": {
-    "url": "jdbc:localhost:3306/alarms",
+    "url": "jdbc:mysql://localhost:3306/alarms",
     "username": "root",
     "password": "root"
   }
