@@ -2,13 +2,27 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="91b92123-6658-45c5-aa53-a6ca123822d2" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_pool2_2_5_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__redis_clients_jedis_2_9_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__top_crossoverjie_opensource_distributed_redis_lock_1_0_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blogs-impl/src/main/java/com/blogs/util/test/TestRedisLock.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_lettuce_lettuce_core_5_0_2_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_buffer_4_1_22_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_codec_4_1_22_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_common_4_1_22_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_handler_4_1_22_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_resolver_4_1_22_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_transport_4_1_22_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_projectreactor_reactor_core_3_1_5_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_reactivestreams_reactive_streams_1_0_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_data_redis_2_0_9_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_commons_2_0_5_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_keyvalue_2_0_5_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_redis_2_0_5_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blogs-impl/src/main/java/com/blogs/config/RedisConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blogs-impl/src/main/java/com/blogs/service/IRedisLockService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blogs-impl/src/main/java/com/blogs/service/RedisLockService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blogs-impl/src/test/java/com/blogs/service/IRedisLockServiceTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/blogs-impl/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/blogs-impl/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blogs-impl/src/main/java/com/blogs/BlogsImplApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/blogs-impl/src/main/java/com/blogs/BlogsImplApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blogs-impl/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/blogs-impl/src/main/resources/application.properties" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/blogs-impl/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -51,10 +65,19 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/blogs-impl/src/main/java/com/blogs/util/test/TestStr.java">
+        <entry file="file://$PROJECT_DIR$/blogs-impl/src/main/java/com/blogs/service/ITestService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="319">
-              <caret line="17" column="51" selection-start-line="17" selection-start-column="27" selection-end-line="17" selection-end-column="51" />
+            <state relative-caret-position="145">
+              <caret line="5" column="31" selection-start-line="5" selection-start-column="31" selection-end-line="5" selection-end-column="31" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/blogs-impl/src/main/java/com/blogs/service/RedisLockService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="243">
+              <caret line="49" lean-forward="true" selection-start-line="49" selection-end-line="49" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -63,19 +86,31 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/blogs-impl/src/main/java/com/blogs/util/test/TestSub.java">
+        <entry file="file://$PROJECT_DIR$/blogs-impl/src/main/java/com/blogs/config/RedisConfig.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="174">
-              <caret line="8" column="5" selection-start-line="8" selection-start-column="5" selection-end-line="8" selection-end-column="5" />
+            <state relative-caret-position="552">
+              <caret line="26" column="70" selection-start-line="26" selection-start-column="70" selection-end-line="26" selection-end-column="70" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/blogs-impl/src/main/java/com/blogs/config/TableConfig.java">
+        <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/data/spring-data-redis/2.0.5.RELEASE/spring-data-redis-2.0.5.RELEASE-sources.jar!/org/springframework/data/redis/connection/RedisConnectionFactory.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="203">
-              <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+            <state relative-caret-position="238">
+              <caret line="26" column="17" selection-start-line="26" selection-start-column="17" selection-end-line="26" selection-end-column="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/data/spring-data-redis/2.0.5.RELEASE/spring-data-redis-2.0.5.RELEASE-sources.jar!/org/springframework/data/redis/core/RedisTemplate.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="111">
+              <caret line="85" column="13" selection-start-line="85" selection-start-column="13" selection-end-line="85" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -83,62 +118,48 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/blogs-impl/src/main/java/com/blogs/BlogsImplApplication.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="145">
-              <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+            <state relative-caret-position="116">
+              <caret line="6" column="20" selection-start-line="6" selection-start-column="20" selection-end-line="6" selection-end-column="20" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/blogs-impl/src/test/java/com/blogs/BlogsImplApplicationTests.java">
+        <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/data/spring-data-redis/2.0.5.RELEASE/spring-data-redis-2.0.5.RELEASE-sources.jar!/org/springframework/data/redis/repository/configuration/EnableRedisRepositories.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="203">
-              <caret line="21" column="13" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
+            <state relative-caret-position="174">
+              <caret line="41" column="102" lean-forward="true" selection-start-line="41" selection-start-column="102" selection-end-line="41" selection-end-column="102" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/blogs-impl/src/main/java/com/blogs/util/TestAgentName.java">
+        <entry file="file://$PROJECT_DIR$/blogs-impl/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="13" selection-start-line="13" selection-end-line="13" />
+            <state relative-caret-position="393">
+              <caret line="84" column="67" selection-start-line="84" selection-start-column="67" selection-end-line="84" selection-end-column="67" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/blogs-impl/src/main/resources/application.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="482">
+              <caret line="22" column="15" selection-start-line="22" selection-start-column="15" selection-end-line="22" selection-end-column="15" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/blogs-impl/pom.xml">
+        <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-autoconfigure/2.0.0.RELEASE/spring-boot-autoconfigure-2.0.0.RELEASE.jar!/org/springframework/boot/autoconfigure/data/redis/RedisProperties.class">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="172">
-              <caret line="63" column="40" selection-start-line="63" selection-start-column="28" selection-end-line="63" selection-end-column="40" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/blogs-impl/src/main/java/com/blogs/util/test/TestRedisLock.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="58">
-              <caret line="2" column="26" selection-start-line="2" selection-start-column="26" selection-end-line="2" selection-end-column="26" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/blogs-impl/src/main/java/com/blogs/service/TestService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="377">
-              <caret line="15" column="50" selection-start-line="15" selection-start-column="50" selection-end-line="15" selection-end-column="50" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/blogs-impl/src/main/java/com/blogs/service/ITestService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="203">
-              <caret line="7" column="23" selection-start-line="7" selection-start-column="23" selection-end-line="7" selection-end-column="23" />
+            <state relative-caret-position="848">
+              <caret line="58" column="16" selection-start-line="58" selection-start-column="16" selection-end-line="58" selection-end-column="16" />
+              <folding>
+                <element signature="e#1410#1411#0" expanded="true" />
+                <element signature="e#1450#1451#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -151,22 +172,18 @@
         <option value="Tag Library Descriptor" />
         <option value="Interface" />
         <option value="Class" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>USERNAME</find>
-      <find>est/inser</find>
-      <find>error</find>
-      <find>d</find>
       <find>dao</find>
       <find>mybatis-config.xml</find>
       <find>mybatis</find>
       <find>on&gt;1.3.7.RELEASE&lt;/vers</find>
       <find>//		14</find>
       <find>e</find>
-      <find>ci</find>
       <find>密码</find>
       <find>this file message</find>
       <find>mail.smtp.ssl.enable</find>
@@ -186,6 +203,11 @@
       <find>testDao</find>
       <find>jaxws</find>
       <find>document</find>
+      <find>/data/logs/tps-consumer/tps.log</find>
+      <find>ci</find>
+      <find>tps-consumer</find>
+      <find>setJedisCluster</find>
+      <find>==开始加锁</find>
     </findStrings>
     <dirStrings>
       <dir>D:\IdeaProject\blogs\blogs\blogs-impl\src\main\java\com\blogs\dao</dir>
@@ -211,7 +233,6 @@
         <option value="$PROJECT_DIR$/blogs-impl/src/test/java/com/blogs/ServiceTests.java" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/793f84e1-1182-47e5-8e4f-278a46cbcd0d/console.sql" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/ff200fec-f3ff-42d4-b374-c7536e90b9b6/console.sql" />
-        <option value="$PROJECT_DIR$/blogs-impl/src/main/resources/application.properties" />
         <option value="$PROJECT_DIR$/blogs-impl/src/test/java/com/blogs/BlogsImplApplicationTests.java" />
         <option value="$PROJECT_DIR$/blogs-impl/src/main/java/com/blogs/entity/UserInfoEntity.java" />
         <option value="$PROJECT_DIR$/blogs-impl/src/main/java/com/blogs/util/TestEmailUtils.java" />
@@ -229,7 +250,6 @@
         <option value="$PROJECT_DIR$/blogs-impl/src/main/java/com/blogs/util/test/TestMainLatch.java" />
         <option value="$PROJECT_DIR$/blogs-impl/src/main/java/com/blogs/dao/TestDao.java" />
         <option value="$PROJECT_DIR$/blogs-impl/src/main/java/com/blogs/util/test/TestDate.java" />
-        <option value="$PROJECT_DIR$/blogs-impl/src/main/java/com/blogs/BlogsImplApplication.java" />
         <option value="$PROJECT_DIR$/blogs-impl/src/main/java/com/blogs/service/ITestService.java" />
         <option value="$PROJECT_DIR$/blogs-impl/src/main/java/com/blogs/service/TestService.java" />
         <option value="$PROJECT_DIR$/blogs-impl/src/main/java/com/blogs/config/CxfConfig.java" />
@@ -239,7 +259,13 @@
         <option value="$PROJECT_DIR$/blogs-impl/src/main/java/com/blogs/util/test/TestHostName.java" />
         <option value="$PROJECT_DIR$/blogs-impl/src/main/java/com/blogs/util/test/TestStr.java" />
         <option value="$PROJECT_DIR$/blogs-impl/src/main/java/com/blogs/util/test/TestAll.java" />
+        <option value="$PROJECT_DIR$/blogs-impl/src/main/java/com/blogs/service/IRedisLockService.java" />
+        <option value="$PROJECT_DIR$/blogs-impl/src/test/java/com/blogs/service/IRedisLockServiceTest.java" />
         <option value="$PROJECT_DIR$/blogs-impl/pom.xml" />
+        <option value="$PROJECT_DIR$/blogs-impl/src/main/java/com/blogs/BlogsImplApplication.java" />
+        <option value="$PROJECT_DIR$/blogs-impl/src/main/java/com/blogs/config/RedisConfig.java" />
+        <option value="$PROJECT_DIR$/blogs-impl/src/main/java/com/blogs/service/RedisLockService.java" />
+        <option value="$PROJECT_DIR$/blogs-impl/src/main/resources/application.properties" />
       </list>
     </option>
   </component>
@@ -346,7 +372,41 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="com" type="462c0819:PsiDirectoryNode" />
               <item name="blogs" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="blogs" type="b2602c69:ProjectViewProjectNode" />
+              <item name="blogs" type="462c0819:PsiDirectoryNode" />
+              <item name="blogs-impl" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="blogs" type="462c0819:PsiDirectoryNode" />
               <item name="service" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="blogs" type="b2602c69:ProjectViewProjectNode" />
+              <item name="blogs" type="462c0819:PsiDirectoryNode" />
+              <item name="blogs-impl" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="blogs" type="462c0819:PsiDirectoryNode" />
+              <item name="util" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="blogs" type="b2602c69:ProjectViewProjectNode" />
+              <item name="blogs" type="462c0819:PsiDirectoryNode" />
+              <item name="blogs-impl" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="blogs" type="462c0819:PsiDirectoryNode" />
+              <item name="util" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="blogs" type="b2602c69:ProjectViewProjectNode" />
@@ -390,6 +450,17 @@
               <item name="com" type="462c0819:PsiDirectoryNode" />
               <item name="blogs" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="blogs" type="b2602c69:ProjectViewProjectNode" />
+              <item name="blogs" type="462c0819:PsiDirectoryNode" />
+              <item name="blogs-impl" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="blogs" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -413,6 +484,9 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.intellij.database.dataSource.DataSourceTemplate" value="MySQL" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.includeInheritedMembers" value="true" />
     <property name="js-jscs-nodeInterpreter" value="C:\Program Files\nodejs\node.exe" />
     <property name="js.eslint.eslintPackage" value="" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -423,16 +497,22 @@
     <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
   </component>
   <component name="RecentsManager">
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.blogs.service" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="com.blogs" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\IdeaProject\blogs\blogs\blogs-impl\src\main\resources" />
-      <recent name="D:\IdeaProject\blogs\blogs\blogs-impl\src\main\resources\mapper" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.blogs.config" />
       <recent name="com.blogs.util" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\IdeaProject\blogs\blogs\blogs-impl\src\main\resources" />
+      <recent name="D:\IdeaProject\blogs\blogs\blogs-impl\src\main\resources\mapper" />
     </key>
     <key name="CreateClassDialog.RecentsKey">
       <recent name="com.blogs.util" />
@@ -450,7 +530,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.BlogsImplApplication">
+  <component name="RunManager" selected="JUnit.IRedisLockServiceTest.redisLockTest">
     <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android App">
       <module name="" />
       <option name="DEPLOY" value="true" />
@@ -736,20 +816,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestMinTime" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.blogs.util.test.TestMinTime" />
-      <module name="blogs-impl" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.blogs.util.test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="TestStr" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.blogs.util.test.TestStr" />
       <module name="blogs-impl" />
@@ -861,6 +927,23 @@
       <setting name="depsClasspath" value="false" />
       <method v="2" />
     </configuration>
+    <configuration name="IRedisLockServiceTest.redisLockTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="blogs-impl" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.blogs.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.blogs.service" />
+      <option name="MAIN_CLASS_NAME" value="com.blogs.service.IRedisLockServiceTest" />
+      <option name="METHOD_NAME" value="redisLockTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
       <option name="TEST_OBJECT" value="class" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
@@ -937,20 +1020,20 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Application.TestMinTime" />
       <item itemvalue="Application.TestDayTime" />
       <item itemvalue="Application.TestHostName" />
       <item itemvalue="Application.TestStr" />
       <item itemvalue="Application.TestAll" />
       <item itemvalue="Spring Boot.BlogsImplApplication" />
+      <item itemvalue="JUnit.IRedisLockServiceTest.redisLockTest" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.IRedisLockServiceTest.redisLockTest" />
         <item itemvalue="Application.TestAll" />
         <item itemvalue="Application.TestStr" />
         <item itemvalue="Application.TestHostName" />
         <item itemvalue="Application.TestDayTime" />
-        <item itemvalue="Application.TestMinTime" />
       </list>
     </recent_temporary>
   </component>
@@ -1032,50 +1115,49 @@
       <workItem from="1553748064469" duration="659000" />
       <workItem from="1553756052045" duration="1013000" />
       <workItem from="1569292152933" duration="27000" />
-      <workItem from="1569293110848" duration="1088000" />
+      <workItem from="1569293110848" duration="6898000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="BlogsImplApplicationTests_contextLoads - 2018.09.14 at 15h 43m 54s.xml">
-      <configuration name="BlogsImplApplicationTests.contextLoads" configurationId="JUnit" />
+    <history-entry file="IRedisLockServiceTest_redisLockTest - 2019.09.24 at 15h 51m 51s.xml">
+      <configuration name="IRedisLockServiceTest.redisLockTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="BlogsImplApplicationTests_contextLoads - 2018.09.14 at 15h 56m 54s.xml">
-      <configuration name="BlogsImplApplicationTests.contextLoads" configurationId="JUnit" />
+    <history-entry file="IRedisLockServiceTest_redisLockTest - 2019.09.24 at 15h 53m 22s.xml">
+      <configuration name="IRedisLockServiceTest.redisLockTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="BlogsImplApplicationTests_contextLoads - 2018.09.14 at 16h 00m 11s.xml">
-      <configuration name="BlogsImplApplicationTests.contextLoads" configurationId="JUnit" />
+    <history-entry file="IRedisLockServiceTest_redisLockTest - 2019.09.24 at 15h 53m 48s.xml">
+      <configuration name="IRedisLockServiceTest.redisLockTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="BlogsImplApplicationTests_contextLoads - 2018.09.14 at 16h 02m 32s.xml">
-      <configuration name="BlogsImplApplicationTests.contextLoads" configurationId="JUnit" />
+    <history-entry file="IRedisLockServiceTest_redisLockTest - 2019.09.24 at 15h 56m 17s.xml">
+      <configuration name="IRedisLockServiceTest.redisLockTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="BlogsImplApplicationTests_contextLoads - 2018.09.14 at 16h 04m 57s.xml">
-      <configuration name="BlogsImplApplicationTests.contextLoads" configurationId="JUnit" />
+    <history-entry file="IRedisLockServiceTest_redisLockTest - 2019.09.24 at 15h 57m 52s.xml">
+      <configuration name="IRedisLockServiceTest.redisLockTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="BlogsImplApplicationTests_contextLoads - 2018.09.14 at 16h 23m 56s.xml">
-      <configuration name="BlogsImplApplicationTests.contextLoads" configurationId="JUnit" />
+    <history-entry file="IRedisLockServiceTest_redisLockTest - 2019.09.24 at 15h 58m 03s.xml">
+      <configuration name="IRedisLockServiceTest.redisLockTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="BlogsImplApplicationTests_main - 2018.09.18 at 11h 15m 17s.xml">
-      <configuration name="BlogsImplApplicationTests.main" configurationId="JUnit" />
+    <history-entry file="IRedisLockServiceTest_redisLockTest - 2019.09.24 at 16h 18m 22s.xml">
+      <configuration name="IRedisLockServiceTest.redisLockTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="BlogsImplApplicationTests_main - 2018.09.18 at 11h 45m 06s.xml">
-      <configuration name="BlogsImplApplicationTests.main" configurationId="JUnit" />
+    <history-entry file="IRedisLockServiceTest_redisLockTest - 2019.09.24 at 16h 21m 12s.xml">
+      <configuration name="IRedisLockServiceTest.redisLockTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="BlogsImplApplicationTests_main - 2018.09.18 at 11h 45m 45s.xml">
-      <configuration name="BlogsImplApplicationTests.main" configurationId="JUnit" />
+    <history-entry file="IRedisLockServiceTest_redisLockTest - 2019.09.24 at 16h 24m 09s.xml">
+      <configuration name="IRedisLockServiceTest.redisLockTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="BlogsImplApplicationTests_main - 2018.09.18 at 11h 46m 23s.xml">
-      <configuration name="BlogsImplApplicationTests.main" configurationId="JUnit" />
+    <history-entry file="IRedisLockServiceTest_redisLockTest - 2019.09.24 at 16h 29m 18s.xml">
+      <configuration name="IRedisLockServiceTest.redisLockTest" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="182744000" />
+    <option name="totallyTimeSpent" value="188554000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1440" y="0" width="1920" height="1080" extended-state="0" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18317358" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22736955" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -1089,17 +1171,17 @@
       <window_info anchor="bottom" id="Statistic" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.15806112" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.82374865" weight="0.37227723" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.75239617" visible="true" weight="0.4138614" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.82374865" weight="0.4970297" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.85889244" visible="true" weight="0.3" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Spring" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.74387646" weight="0.47425744" />
-      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.24760383" side_tool="true" visible="true" weight="0.4138614" />
-      <window_info anchor="bottom" id="Messages" order="10" sideWeight="0.47763577" weight="0.32970297" />
+      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.74387646" weight="0.42772278" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.14110756" side_tool="true" weight="0.6544554" />
+      <window_info anchor="bottom" id="Messages" order="10" sideWeight="0.47603834" weight="0.32970297" />
       <window_info anchor="bottom" id="Version Control" order="11" />
-      <window_info anchor="bottom" id="Java Enterprise" order="12" />
+      <window_info anchor="bottom" id="Java Enterprise" order="12" weight="0.32970297" />
       <window_info anchor="bottom" id="Database Console" order="13" sideWeight="0.49597424" weight="0.32980973" />
       <window_info anchor="right" id="Maven" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
@@ -1124,98 +1206,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_91/src.zip!/java/util/Calendar.java" />
-    <entry file="file://$PROJECT_DIR$/blogs-impl/src/main/java/com/blogs/util/JsonUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="870">
-          <caret line="40" column="25" selection-start-line="40" selection-start-column="25" selection-end-line="40" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_91/src.zip!/java/lang/StringCoding.java" />
-    <entry file="file://$PROJECT_DIR$/blogs-impl/src/main/java/com/blogs/util/TestEmailUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="174">
-          <caret line="19" selection-start-line="19" selection-end-line="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/blogs-impl/src/main/java/com/blogs/util/TestMain.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="406">
-          <caret line="19" column="30" selection-start-line="19" selection-start-column="30" selection-end-line="19" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_91/src.zip!/java/util/concurrent/ExecutorService.java" />
-    <entry file="file://$PROJECT_DIR$/blogs-impl/src/main/java/com/blogs/util/test/TestCallable.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1566">
-          <caret line="63" selection-start-line="63" selection-end-line="63" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/blueocn/tps/ci/tps-consumer/4.7.7.4-RELEASE/tps-consumer-4.7.7.4-RELEASE.jar!/org/apache/http/impl/nio/client/HttpAsyncClients.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="377">
-          <caret line="23" column="43" selection-start-line="23" selection-start-column="43" selection-end-line="23" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/blogs-impl/src/main/java/com/blogs/util/test/TestSuper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="116">
-          <caret line="6" column="30" selection-start-line="6" selection-start-column="30" selection-end-line="6" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_91/src.zip!/java/text/DateFormat.java" />
-    <entry file="jar://$MAVEN_REPOSITORY$/mysql/mysql-connector-java/5.1.45/mysql-connector-java-5.1.45.jar!/com/mysql/jdbc/Driver.class" />
-    <entry file="file://$PROJECT_DIR$/blogs-impl/src/main/resources/jdbc.json">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/blogs-impl/src/main/resources/mybatis-config.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="174">
-          <caret line="6" column="51" selection-start-line="6" selection-start-column="51" selection-end-line="6" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/blogs-impl/src/main/resources/application.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="29">
-          <caret line="1" selection-start-line="1" selection-end-line="1" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-autoconfigure/2.0.0.RELEASE/spring-boot-autoconfigure-2.0.0.RELEASE.jar!/org/springframework/boot/autoconfigure/gson/GsonAutoConfiguration.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="29" column="18" selection-start-line="29" selection-start-column="18" selection-end-line="29" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/blueocn/tps/ci/tps-consumer/4.7.7.4-RELEASE/tps-consumer-4.7.7.4-RELEASE.jar!/com/google/gson/GsonBuilder.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="155">
-          <caret line="19" column="19" selection-start-line="19" selection-start-column="19" selection-end-line="19" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/blogs-impl/src/main/java/com/blogs/controller/TestController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="232">
-          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/blogs-impl/src/main/java/com/blogs/config/DbConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="232">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="das://table:/cde5c446/793f84e1-1182-47e5-8e4f-278a46cbcd0d/alarms.user_info" />
     <entry file="file://$PROJECT_DIR$/blogs-impl/src/main/java/com/blogs/entity/UserInfoEntity.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -1256,13 +1246,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2262">
           <caret line="79" selection-start-line="79" selection-end-line="79" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/blogs-impl/src/main/java/com/blogs/util/test/TestMainLatch.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="232">
-          <caret line="18" column="18" selection-start-line="18" selection-start-column="8" selection-end-line="18" selection-end-column="18" />
         </state>
       </provider>
     </entry>
@@ -1348,13 +1331,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/blogs-impl/src/main/java/com/blogs/service/ITestService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="203">
-          <caret line="7" column="23" selection-start-line="7" selection-start-column="23" selection-end-line="7" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/blogs-impl/src/main/java/com/blogs/util/TestAgentName.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
@@ -1362,10 +1338,37 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/blogs-impl/src/main/java/com/blogs/util/test/TestRedisLock.java">
+    <entry file="file://$PROJECT_DIR$/blogs-impl/src/main/java/com/blogs/util/test/TestSub.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="174">
+          <caret line="8" column="5" selection-start-line="8" selection-start-column="5" selection-end-line="8" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blogs-impl/src/main/java/com/blogs/util/TestPoi.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="58">
-          <caret line="2" column="26" selection-start-line="2" selection-start-column="26" selection-end-line="2" selection-end-column="26" />
+          <caret line="2" column="36" selection-start-line="2" selection-start-column="36" selection-end-line="2" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blogs-impl/src/main/java/com/blogs/util/test/TestMainLatch.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="185">
+          <caret line="24" column="25" lean-forward="true" selection-start-line="24" selection-start-column="25" selection-end-line="24" selection-end-column="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blogs-impl/src/main/java/com/blogs/util/TestMain.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="290">
+          <caret line="10" column="40" lean-forward="true" selection-start-line="10" selection-start-column="40" selection-end-line="10" selection-end-column="40" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1379,38 +1382,171 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/blogs-impl/src/main/java/com/blogs/util/test/TestSub.java">
+    <entry file="file://$PROJECT_DIR$/blogs-impl/src/main/java/com/blogs/util/test/TestRedisLock.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="174">
-          <caret line="8" column="5" selection-start-line="8" selection-start-column="5" selection-end-line="8" selection-end-column="5" />
+        <state relative-caret-position="58">
+          <caret line="2" column="26" selection-start-line="2" selection-start-column="26" selection-end-line="2" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blogs-impl/src/test/java/com/blogs/BlogsImplApplicationTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-110">
+          <caret line="38" column="52" lean-forward="true" selection-start-line="38" selection-start-column="52" selection-end-line="38" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blogs-impl/src/test/java/com/blogs/ServiceTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="116">
+          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blogs-impl/src/main/java/com/blogs/config/DbConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="232">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/blogs-impl/src/main/java/com/blogs/config/TableConfig.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="203">
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+          <caret line="7" column="48" selection-start-line="7" selection-start-column="48" selection-end-line="7" selection-end-column="48" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/blogs-impl/src/main/java/com/blogs/BlogsImplApplication.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/redis/clients/jedis/2.9.0/jedis-2.9.0.jar!/redis/clients/jedis/JedisCommands.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="164">
+          <caret line="21" column="42" selection-start-line="21" selection-start-column="42" selection-end-line="21" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/jakiro/jakiro-tddl-springboot/1.1/jakiro-tddl-springboot-1.1.jar!/jakiro/mybatis/TableNameHandler.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="261">
+          <caret line="12" column="33" selection-start-line="12" selection-start-column="33" selection-end-line="12" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/top/crossoverjie/opensource/distributed-redis-lock/1.0.0/distributed-redis-lock-1.0.0.jar!/com/crossoverjie/distributed/lock/redis/RedisLock.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="174">
+          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+          <folding>
+            <element signature="e#2626#2627#0" expanded="true" />
+            <element signature="e#2660#2661#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blogs-impl/src/test/java/com/blogs/service/IRedisLockServiceTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="36" column="18" selection-start-line="36" selection-start-column="18" selection-end-line="36" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blogs-impl/src/main/java/com/blogs/service/IRedisLockService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="58">
+          <caret line="2" column="24" selection-start-line="2" selection-start-column="24" selection-end-line="2" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blogs-impl/src/main/java/com/blogs/service/ITestService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="145">
-          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/blogs-impl/src/test/java/com/blogs/BlogsImplApplicationTests.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="203">
-          <caret line="21" column="13" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
+          <caret line="5" column="31" selection-start-line="5" selection-start-column="31" selection-end-line="5" selection-end-column="31" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/blogs-impl/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="172">
-          <caret line="63" column="40" selection-start-line="63" selection-start-column="28" selection-end-line="63" selection-end-column="40" />
+        <state relative-caret-position="393">
+          <caret line="84" column="67" selection-start-line="84" selection-start-column="67" selection-end-line="84" selection-end-column="67" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/data/spring-data-redis/2.0.5.RELEASE/spring-data-redis-2.0.5.RELEASE.jar!/org/springframework/data/redis/core/RedisTemplate.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="174">
+          <caret line="46" column="13" selection-start-line="46" selection-start-column="13" selection-end-line="46" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blogs-impl/src/main/java/com/blogs/BlogsImplApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="116">
+          <caret line="6" column="20" selection-start-line="6" selection-start-column="20" selection-end-line="6" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/data/spring-data-redis/2.0.5.RELEASE/spring-data-redis-2.0.5.RELEASE.jar!/org/springframework/data/redis/repository/configuration/EnableRedisRepositories.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="30" column="18" selection-start-line="30" selection-start-column="18" selection-end-line="30" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/data/spring-data-redis/2.0.5.RELEASE/spring-data-redis-2.0.5.RELEASE-sources.jar!/org/springframework/data/redis/repository/configuration/EnableRedisRepositories.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="174">
+          <caret line="41" column="102" lean-forward="true" selection-start-line="41" selection-start-column="102" selection-end-line="41" selection-end-column="102" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/data/spring-data-redis/2.0.5.RELEASE/spring-data-redis-2.0.5.RELEASE-sources.jar!/org/springframework/data/redis/core/RedisTemplate.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="111">
+          <caret line="85" column="13" selection-start-line="85" selection-start-column="13" selection-end-line="85" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/data/spring-data-redis/2.0.5.RELEASE/spring-data-redis-2.0.5.RELEASE-sources.jar!/org/springframework/data/redis/connection/RedisConnectionFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="26" column="17" selection-start-line="26" selection-start-column="17" selection-end-line="26" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blogs-impl/src/main/java/com/blogs/config/RedisConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="552">
+          <caret line="26" column="70" selection-start-line="26" selection-start-column="70" selection-end-line="26" selection-end-column="70" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blogs-impl/src/main/java/com/blogs/service/RedisLockService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="243">
+          <caret line="49" lean-forward="true" selection-start-line="49" selection-end-line="49" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blogs-impl/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="482">
+          <caret line="22" column="15" selection-start-line="22" selection-start-column="15" selection-end-line="22" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-autoconfigure/2.0.0.RELEASE/spring-boot-autoconfigure-2.0.0.RELEASE.jar!/org/springframework/boot/autoconfigure/data/redis/RedisProperties.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="848">
+          <caret line="58" column="16" selection-start-line="58" selection-start-column="16" selection-end-line="58" selection-end-column="16" />
+          <folding>
+            <element signature="e#1410#1411#0" expanded="true" />
+            <element signature="e#1450#1451#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
