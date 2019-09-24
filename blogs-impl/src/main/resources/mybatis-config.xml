@@ -19,5 +19,6 @@
     </settings>
     <typeAliases>
         <package name="com.blogs.entity.TestEntity"/>
+        <package name="com.blogs.entity.UserInfoEntity"/>
     </typeAliases>
 </configuration>

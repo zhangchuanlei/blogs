@@ -2,4 +2,14 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
 <mapper namespace="com.blogs.dao.TestDao">
 
+    <insert id="insert" parameterType="com.blogs.entity.UserInfoEntity">
+        <selectKey keyProperty="id" resultType="int">
+            SELECT lAST_INSERT_ID()
+        </selectKey>
+        INSERT INTO user_info (USER_NAME,PASSWORD) VALUES (#{userName},#{password})
+    </insert>
+
+    <delete id="delete" parameterType="com.blogs.entity.UserInfoEntity">
+        DELETE FROM user_info WHERE id=#{id}
+    </delete>
 </mapper>
