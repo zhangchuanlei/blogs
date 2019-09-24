@@ -59,12 +59,12 @@
 			<artifactId>jakiro-tddl-springboot</artifactId>
 			<version>1.1</version>
 		</dependency>
-		<dependency>
-			<groupId>com.blueocn.tps.ci</groupId>
-			<artifactId>tps-consumer</artifactId>
-			<version>4.7.7.4-RELEASE</version>
-			<scope>test</scope>
-		</dependency>
+<!--		<dependency>-->
+<!--			<groupId>com.blueocn.tps.ci</groupId>-->
+<!--			<artifactId>tps-consumer</artifactId>-->
+<!--			<version>4.7.7.4-RELEASE</version>-->
+<!--			<scope>test</scope>-->
+<!--		</dependency>-->
 		<dependency>
 			<groupId>com.google.appengine</groupId>
 			<artifactId>appengine-api</artifactId>
@@ -74,21 +74,18 @@
 			<groupId>org.junit.jupiter</groupId>
 			<artifactId>junit-jupiter-api</artifactId>
 		</dependency>
-		<dependency>
-			<groupId>com.blueocn.tps.ci</groupId>
-			<artifactId>tps-consumer</artifactId>
-			<version>4.7.7.16-RELEASE</version>
-		</dependency>
-		<dependency>
-			<groupId>com.blueocn.tps.ci</groupId>
-			<artifactId>tps-consumer</artifactId>
-			<version>4.7.7.4-RELEASE</version>
-		</dependency>
         <dependency>
             <groupId>org.apache.cxf</groupId>
             <artifactId>cxf-api</artifactId>
             <version>2.7.18</version>
         </dependency>
+
+		<dependency>
+			<groupId>top.crossoverjie.opensource</groupId>
+			<artifactId>distributed-redis-lock</artifactId>
+			<version>1.0.0</version>
+		</dependency>
+
 		<!--<dependency>-->
 			<!--<groupId>org.springframework.boot</groupId>-->
 			<!--<artifactId>spring-boot</artifactId>-->
