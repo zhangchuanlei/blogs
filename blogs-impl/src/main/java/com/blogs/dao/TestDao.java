@@ -2,6 +2,7 @@ package com.blogs.dao;
 
 import com.blogs.entity.TestEntity;
 import org.apache.ibatis.annotations.Mapper;
+import org.springframework.stereotype.Component;
 
 import java.util.List;
 
@@ -9,6 +10,7 @@ import java.util.List;
  * Created by OneAPM on 2017/12/5.
  */
 @Mapper
+@Component
 public interface TestDao<T extends TestEntity> {
 
     //添加

@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<dataSource name="alarms@localhost">
+<dataSource name="test@localhost">
   <database-model serializer="dbm" rdbms="MYSQL" format-version="4.7">
     <root id="1">
       <DefaultCasing>lower/lower</DefaultCasing>
     </root>
     <schema id="2" parent="1" name="alarms">
-      <Current>1</Current>
       <Visible>1</Visible>
       <Collation>latin1_swedish_ci</Collation>
     </schema>
@@ -58,6 +57,8 @@
       <Collation>utf8_general_ci</Collation>
     </schema>
     <schema id="19" parent="1" name="test">
+      <Current>1</Current>
+      <Visible>1</Visible>
       <Collation>latin1_swedish_ci</Collation>
     </schema>
     <schema id="20" parent="1" name="tpmsaas">
@@ -939,7 +940,7 @@
       <Charset>utf8mb4</Charset>
       <DefaultForCharset>0</DefaultForCharset>
     </collation>
-    <table id="240" parent="2" name="user_info">
+    <table id="240" parent="19" name="user_info">
       <Engine>InnoDB</Engine>
     </table>
     <column id="241" parent="240" name="id">

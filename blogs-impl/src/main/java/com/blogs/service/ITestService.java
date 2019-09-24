@@ -5,6 +5,8 @@ package com.blogs.service;
  */
 public interface ITestService {
 
+    void testService();
+
     void insertTestEntity();
 
     void deleteUserInfoEntity(int id);
