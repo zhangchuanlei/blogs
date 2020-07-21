@@ -21,5 +21,31 @@
       <user-name>root</user-name>
       <introspection-schemas>*:alarms,test</introspection-schemas>
     </data-source>
+    <data-source name="bi_data@10.128.106.73" uuid="5f2ff90e-a3b6-4e16-b277-3473d65ef653">
+      <database-info product="ClickHouse" version="1.1.54378" jdbc-version="0.1" driver-name="ru.yandex.clickhouse-jdbc" driver-version="0.1.50" dbms="CLICKHOUSE" exact-version="1.1.54378" exact-driver-version="0.1">
+        <identifier-quote-string>`</identifier-quote-string>
+      </database-info>
+      <case-sensitivity plain-identifiers="exact" quoted-identifiers="exact" />
+      <secret-storage>master_key</secret-storage>
+      <introspection-schemas>*:@</introspection-schemas>
+    </data-source>
+    <data-source name="10.128.106.73" uuid="c4f8103a-63a6-45dc-bff3-c3abc1746f37">
+      <database-info product="MySQL" version="5.7.15" jdbc-version="4.2" driver-name="MySQL Connector/J" driver-version="mysql-connector-java-8.0.15 (Revision: 79a4336f140499bd22dd07f02b708e163844e3d5)" dbms="MYSQL" exact-version="5.7.15" exact-driver-version="8.0">
+        <extra-name-characters>#@</extra-name-characters>
+        <identifier-quote-string>`</identifier-quote-string>
+      </database-info>
+      <case-sensitivity plain-identifiers="exact" quoted-identifiers="exact" />
+      <secret-storage>master_key</secret-storage>
+      <user-name>root</user-name>
+      <introspection-schemas>*:@</introspection-schemas>
+    </data-source>
+    <data-source name="bi_data@10.128.106.58" uuid="41d76651-4236-4d1b-b36b-7e30554d143b">
+      <database-info product="ClickHouse" version="1.1.54304" jdbc-version="0.1" driver-name="ru.yandex.clickhouse-jdbc" driver-version="0.1.50" dbms="CLICKHOUSE" exact-version="1.1.54304" exact-driver-version="0.1">
+        <identifier-quote-string>`</identifier-quote-string>
+      </database-info>
+      <case-sensitivity plain-identifiers="exact" quoted-identifiers="exact" />
+      <secret-storage>master_key</secret-storage>
+      <introspection-schemas>*:@</introspection-schemas>
+    </data-source>
   </component>
 </project>
