@@ -1,0 +1,16 @@
+@startuml
+title 	静态密码验证接口改造
+
+actor "用户使用browser/app"
+participant "一级BOMC" as A
+participant "数据库" as B
+
+activate A
+
+A   -> A:接收静态密码验证接口
+A   -> A:读取静态密码验证接口请求信息
+
+A   -> B :解析静态密码验证接口client_ip信息入库
+activate B
+B   -> A:返回最终静态密码验证接口信息的入库结果
+@enduml

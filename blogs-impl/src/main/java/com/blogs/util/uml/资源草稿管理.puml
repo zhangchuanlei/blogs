@@ -1,0 +1,134 @@
+@startuml
+title 资源草稿管理
+
+
+
+actor user
+participant "草稿箱资源展示模块" as A
+participant "草稿箱资源操作接口模块" as B
+participant "数据库模块" as C
+
+user  -> A:用户点击草稿箱资源操作按钮
+activate A
+A   -> B:草稿箱资源操作请求
+activate B
+B   -> C:查询未提交草稿箱资源
+activate C
+C --> B:返回未提交草稿箱资源信息
+deactivate
+
+B   -> C:查询已提交草稿箱资源
+activate C
+C --> B:返回已提交草稿箱资源信息
+deactivate
+
+B   -> C:通过资源id查询草稿箱资源
+activate C
+C --> B:返回草稿箱资源信息
+deactivate
+
+B   -> C:查询草稿箱资源详情
+activate C
+C --> B:返回草稿箱资源详情信息
+deactivate
+
+B   -> C:草稿箱资源修改
+activate C
+C --> B:返回草稿箱资源修改结果
+deactivate
+
+B   -> B:记录草稿箱资源修改日志
+
+
+B --> A:返回草稿箱资源操作结果信息
+
+deactivate
+A --> user:返回展示草稿箱资源操作结果信息
+
+
+user  -> A:用户点击草稿箱资源审批按钮
+
+A   -> B:草稿箱资源审批请求
+activate B
+B   -> C:查询草稿箱资源
+activate C
+C --> B:返回草稿箱资源
+deactivate
+
+B   -> C:草稿箱资源审批
+activate C
+C --> B:返回草稿箱资源审批结果
+deactivate
+
+B   -> B:记录草稿箱资源审批日志
+
+B   -> C:草稿箱资源批量审批
+activate C
+C --> B:返回草稿箱资源批量审批结果
+deactivate
+
+B   -> B:记录草稿箱资源批量审批日志
+
+B --> A:返回草稿箱资源审批结果信息
+
+deactivate
+A --> user:返回展示草稿箱资源审批结果信息
+
+
+user  -> A:用户点击草稿箱资源提交按钮
+
+A   -> B:草稿箱资源提交请求
+activate B
+B   -> C:查询未提交草稿箱资源
+activate C
+C --> B:返回未提交草稿箱资源
+deactivate
+
+B   -> C:未提交草稿箱资源提交
+activate C
+C --> B:返回草稿箱资源提交结果
+deactivate
+
+B   -> B:记录未提交草稿箱资源提交日志
+
+B   -> C:草稿箱资源批量提交
+activate C
+C --> B:返回未提交草稿箱资源批量提交结果
+deactivate
+
+B   -> B:记录未提交草稿箱资源批量提交日志
+
+B --> A:返回未提交草稿箱资源提交结果信息
+
+deactivate
+A --> user:返回展示草稿箱资源提交结果信息
+
+
+user  -> A:用户点击草稿箱资源删除按钮
+
+A   -> B:草稿箱资源删除请求
+activate B
+B   -> C:查询草稿箱资源
+activate C
+C --> B:返回草稿箱资源
+deactivate
+
+B   -> C:草稿箱资源删除
+activate C
+C --> B:返回草稿箱资源删除结果
+deactivate
+
+B   -> B:记录草稿箱资源删除日志
+
+B   -> C:草稿箱资源批量删除
+activate C
+C --> B:返回草稿箱资源批量删除结果
+deactivate
+
+B   -> B:记录草稿箱资源批量删除日志
+B --> A:返回草稿箱资源删除结果信息
+
+deactivate
+A --> user:返回展示草稿箱资源删除结果信息
+
+@enduml

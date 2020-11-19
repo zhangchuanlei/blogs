@@ -1,0 +1,21 @@
+@startuml
+title 	接口改造时序图
+
+actor "用户使用browser/app"
+participant "一级BOMC" as A
+participant "数据库" as B
+participant "4a平台" as C
+
+activate A
+
+A   -> A:接收接口请求
+
+A   -> B:读取接口数据库中client_ip
+activate B
+B   -> A:返回client_ip
+A   -> A:存放到请求的header中
+
+A   -> C :调用接口
+activate C
+C   -> A :返回最终接口信息的入库结果
+@enduml

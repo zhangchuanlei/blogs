@@ -1,0 +1,21 @@
+@startuml
+title 	请求重置密码验证接口改造时序图
+
+actor "用户使用browser/app"
+participant "一级BOMC" as A
+participant "数据库" as B
+participant "4a平台" as C
+
+activate A
+
+A   -> A:接收请求重置密码验证接口请求
+
+A   -> B:读取请求重置密码验证接口数据库中client_ip
+activate B
+B   -> A:返回client_ip
+A   -> A:存放到请求的header中
+
+A   -> C :调用请求重置密码验证接口
+activate C
+C   -> A :返回最终请求重置密码验证接口信息的入库结果
+@enduml

@@ -1,0 +1,22 @@
+@startuml
+title 	4A日志同步
+
+
+participant "定时任务" as A
+participant "Mysql数据库" as B
+participant "Oracle数据库" as D
+
+
+activate A
+
+
+A   -> B:查询mysql数据库
+activate B
+
+B   -> D:插入到Oracle数据库
+activate D
+
+D -> B:返回写入结果
+B -> A:返回写入结果
+
+@enduml

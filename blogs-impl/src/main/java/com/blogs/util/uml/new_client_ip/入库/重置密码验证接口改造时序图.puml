@@ -1,0 +1,16 @@
+@startuml
+title 	重置密码验证接口改造
+
+actor "用户使用browser/app"
+participant "一级BOMC" as A
+participant "数据库" as B
+
+activate A
+
+A   -> A:接收重置密码验证接口改造
+A   -> A:读取重置密码验证接口改造请求信息
+
+A   -> B :解析重置密码验证接口改造client_ip信息入库
+activate B
+B   -> A:返回最终重置密码验证接口改造信息的入库结果
+@enduml

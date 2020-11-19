@@ -1,0 +1,2 @@
+ID,FILE_NAME,CREATE_TIME,UPDATE_TIME,SN,OP_ID,OPER_ORG_CODE,4A_ACCT_NAME,APP_ACCT_NAME,APP_ACCT_TYPE,SYS_CODE,ACCS_TYPE,SERVER_IP,CLIENT_IP,OP_BUSI_NAME,OP_OBJ_SSTV,IS_BLUR,IS_BATCH_OP,SSTV_DATA_ENCODE,SSTV_PHONE_NUM,OP_TYPE_CODE,OP_TIME,OP_DESC,BUSI_TYPE_CODE,OTHER_AUTH_ID,IS_USER_AHTHORIZED,USER_AUTH_CERT_TYPE,USER_AUTH_CERT_ID
+int,varchar,time,time,varchar,varchar,varchar,varchar,varchar,varchar,int,varchar,varchar,varchar,varchar,int,int,int,varchar,varchar,int,time,varchar,int,varchar,varchar,varchar,varchar

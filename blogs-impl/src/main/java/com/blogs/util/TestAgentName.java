@@ -1,6 +1,6 @@
 package com.blogs.util;
 
-import com.google.appengine.repackaged.com.google.common.base.StringUtil;
+import com.ailk.toptea.interfac.a4.audit.config.StringUtil;
 import lombok.extern.slf4j.Slf4j;
 
 @Slf4j

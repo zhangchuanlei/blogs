@@ -1,0 +1,2 @@
+ID,FILE_NAME,CREATE_TIME,UPDATE_TIME,SN,4A_ACCT_NAME,APP_ACCT_NAME,APP_ACCT_TYPE,LOGIN_SYS_CODE,CLIENT_IP,LOGIN_RESULT,LOGIN_TIM,LOGIN_TYPE
+int,varchar,time,time,varchar,varchar,char,varchar,varchar,varchar,int,time,int

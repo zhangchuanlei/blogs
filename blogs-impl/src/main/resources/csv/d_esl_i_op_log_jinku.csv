@@ -1,0 +1,7 @@
+ID,PARTITION_MON,FILE_NAME,CREATE_TIME,UPDATE_TIME,SN,OP_ID,OPER_ORG_CODE,4A_ACCT_NAME,APP_ACCT_NAME,APP_ACCT_TYPE,SYS_CODE,ACCS_TYPE,SERVER_IP,CLIENT_IP,OP_BUSI_NAME,OP_OBJ_SSTV,IS_BLUR,IS_BATCH_OP,SSTV_DATA_ENCODE,SSTV_PHONE_NUM,OP_TYPE_CODE,OP_TIME,OP_DESC,BUSI_TYPE_CODE,JINKU_AUTH_ID,IS_USER_AHTHORIZED,USER_AUTH_CERT_TYPE,USER_AUTH_CERT_ID
+int,string,string,time,time,string,string,int,string,string,string,int,int,string,string,string,string,string,int,string,string,int,time,string,int,string,int,string,string
+,11,测试文件,1/11/2020 00:00:00,11/11/2020 00:00:00,ababcedfff,操作ID,1,4a_acct,app_acct,2,2,2,10.128.1.1,10.128.1.2,OP业务名称,obj业务名称,是的，蓝色,2,敏感日志,铭感日志数量,8,2/11/2020 00:00:00,操作描述,2,金库授权ID,2,用户创建类型,用户创建ID
+2,11,测试文件,1/11/2020 00:00:00,11/11/2020 00:00:00,ababcedfff,操作ID,1,4a_acct,app_acct,2,2,2,10.128.1.1,10.128.1.2,OP业务名称,obj业务名称,是的，蓝色,2,敏感日志,铭感日志数量,8,2/11/2020 00:00:00,操作描述,2,金库授权ID,3,用户创建类型,用户创建ID
+3,11,测试文件,1/11/2020 00:00:00,11/11/2020 00:00:00,ababcedfff,操作ID,1,4a_acct,app_acct,2,2,2,10.128.1.1,10.128.1.2,OP业务名称,obj业务名称,是的，蓝色,2,敏感日志,铭感日志数量,8,2/11/2020 00:00:00,操作描述,2,金库授权ID,1,用户创建类型,用户创建ID
+1,11,测试文件,1/11/2020 00:00:00,11/11/2020 00:00:00,ababcedfff,操作ID,1,4a_acct,app_acct,2,2,2,10.128.1.1,10.128.1.2,OP业务名称,obj业务名称,是的，蓝色,2,敏感日志,铭感日志数量,8,2/11/2020 00:00:00,操作描述,2,金库授权ID,5,用户创建类型,用户创建ID
+4,,,,,,,,,,,,,,,,,,,,,,,,,,,,

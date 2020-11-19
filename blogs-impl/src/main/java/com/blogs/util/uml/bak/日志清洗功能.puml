@@ -1,0 +1,21 @@
+@startuml
+title 	日志数据备份
+
+
+participant "定时任务" as A
+participant "资源/采集/监控/服务日志备份" as B
+participant "磁盘" as D
+
+
+activate A
+
+A   -> B:接收日志备份请求
+activate B
+
+B   -> D:日志备份
+activate D
+
+D -> B:返回备份结果
+B -> A:返回备份结果
+
+@enduml

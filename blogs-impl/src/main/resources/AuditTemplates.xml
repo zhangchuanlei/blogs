@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="GB2312"?>
+<AuditTemplates>
+<AuditTemplate>
+    <Sql><![CDATA[
+    select * from (
+Select log_main.*,log_main.user_id FLD_4A_ACCT,'' FLD_BOMC_ACCT From
+(Select * From utoptea.tl_tt_log_4a log4a  Where Exists (Select * From ftoptea.ng_resm_item_acct Where fld_audit_status = '已审核' and FLD_4A_ACCT = log4a.user_id) and user_ip is not Null) log_main
+Union All
+Select log_sub.*,acct.FLD_4A_ACCT FLD_4A_ACCT,decode(acct.FLD_BOMC_ACCT ,Null,log_sub.user_id,acct.FLD_BOMC_ACCT) FLD_BOMC_ACCT From
+(Select * From utoptea.tl_tt_log_4a log4a Where Not Exists (Select * From ftoptea.ng_resm_item_acct Where fld_audit_status = '已审核' and FLD_4A_ACCT = log4a.user_id) and user_ip is not Null) log_sub Left Join ftoptea.ng_resm_item_acct acct On Log_sub.user_id = acct.FLD_BOMC_ACCT
+) order by operate_time
+ ]]></Sql>
+    <AuditColumn type="VARCHAR" defaultValue="1" dbName="">RESOURCE_KIND</AuditColumn>
+    <AuditColumn type="VARCHAR" defaultValue="4ABOMCLog" dbName="">IDENTITY_NAME</AuditColumn>
+    <AuditColumn type="VARCHAR" defaultValue="JTNGBOMC" dbName="">RESOURCE_CODE</AuditColumn>
+    <AuditColumn type="VARCHAR" defaultValue="" dbName="FLD_BOMC_ACCT">SUB_ACCOUNT_NAME</AuditColumn>
+    <AuditColumn type="VARCHAR" defaultValue="10.27.16.141" dbName="USER_IP">CLIENT_ADDRESS</AuditColumn>
+    <AuditColumn type="CLIENT_MAC" defaultValue="" dbName="">CLIENT_MAC</AuditColumn>
+    <AuditColumn type="CLIENT_CPU_SERIAL" defaultValue="" dbName="">CLIENT_CPU_SERIAL</AuditColumn>
+    <AuditColumn type="VARCHAR" defaultValue="10.27.16.141" dbName="">SERVER_ADDRESS</AuditColumn>
+    <AuditColumn type="DATE" defaultValue="" dbName="OPERATE_TIME">OPERATE_TIME</AuditColumn>
+    <AuditColumn type="VARCHAR" defaultValue="" dbName="RESULT">OPERATE_RESULT</AuditColumn>
+    <AuditColumn type="VARCHAR" defaultValue="" dbName="DO_WHAT">OPERATE_CONTENT</AuditColumn>
+    <AuditColumn type="IDR_CREATION_TIME" defaultValue="" dbName="IDR_CREATION_TIME">IDR_CREATION_TIME</AuditColumn>
+    <AuditColumn type="OP_TYPE_NAME" defaultValue="" dbName="DO_WHAT">OP_TYPE_NAME</AuditColumn>
+    <AuditColumn type="OP_LEVEL_ID" defaultValue="" dbName="DO_WHAT">OP_LEVEL_ID</AuditColumn>
+    <AuditColumn type="OP_TYPE_ID" defaultValue="" dbName="DO_WHAT">OP_TYPE_ID</AuditColumn>
+    <AuditColumn type="MODULE_NAME" defaultValue="" dbName="DO_WHAT">MODULE_NAME</AuditColumn>
+    <AuditColumn type="VARCHAR" defaultValue="" dbName="FLD_4A_ACCT">MAIN_ACCOUNT_NAME</AuditColumn>
+    <AuditColumn type="VARCHAR" defaultValue="" dbName="LOG_TYPE">MODULE_ID</AuditColumn>
+    <AuditColumn type="VARCHAR" defaultValue="" dbName="SERVER_ADDRESS">CLIENT_NETWORK_ADDRESS</AuditColumn>
+    <AuditColumn type="CLIENT_PORT" defaultValue="10095" dbName="">CLIENT_PORT</AuditColumn>
+    <AuditColumn type="VARCHAR" defaultValue="10095" dbName="">SERVER_PORT</AuditColumn>
+    <AuditColumn type="VARCHAR" defaultValue="e4:1f:13:4f:ae:a9" dbName="">SERVER_MAC</AuditColumn>
+</AuditTemplate>
+</AuditTemplates>
